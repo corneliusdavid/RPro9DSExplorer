@@ -1,0 +1,388 @@
+object frmDSExplorerMain: TfrmDSExplorerMain
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 474
+  ClientWidth = 1004
+  Constraints.MaxWidth = 1004.000000000000000000
+  Constraints.MinWidth = 1004.000000000000000000
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Header: TToolBar
+    Size.Width = 1004.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblHeader: TLabel
+      Align = Contents
+      Size.Width = 1004.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Retail Pro Plugin DataStore Explorer'
+      TabOrder = 0
+    end
+  end
+  object Footer: TToolBar
+    Align = Bottom
+    Position.Y = 434.000000000000000000
+    Size.Width = 1004.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Vendor SID:'
+      TabOrder = 2
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        ReadOnly = True
+        Text = '7796004949480640247'
+        TextSettings.Font.Size = 10.000000000000000000
+        Position.X = 68.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 117.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+      end
+    end
+    object Label3: TLabel
+      Position.X = 201.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'DataSet SID:'
+      TabOrder = 1
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        ReadOnly = True
+        Text = '7796004949611777783'
+        TextSettings.Font.Size = 10.000000000000000000
+        Position.X = 67.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 117.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+      end
+    end
+    object Label6: TLabel
+      Position.X = 800.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'REC SID:'
+      TabOrder = 0
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        ReadOnly = True
+        Text = '7796012525903222261'
+        TextSettings.Font.Size = 10.000000000000000000
+        Position.X = 67.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 117.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+      end
+    end
+  end
+  object pnlVendors: TPanel
+    Align = Left
+    Position.Y = 48.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object lblVendors: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Vendors'
+      TabOrder = 0
+    end
+    object lvVendors: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TCustomizeItemObjects'
+      ItemIndex = 0
+      ItemSpaces.Left = 5.000000000000000000
+      ItemSpaces.Right = 5.000000000000000000
+      Align = Client
+      Size.Width = 200.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ItemAppearance.ItemHeight = 35
+      ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+      ItemAppearanceObjects.ItemObjects.Text.Trimming = None
+    end
+  end
+  object pnlDataSets: TPanel
+    Align = Left
+    Position.X = 200.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object lblDataSet: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'DataSets'
+      TabOrder = 0
+    end
+    object lvDataSets: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      ItemIndex = 0
+      ItemSpaces.Left = 5.000000000000000000
+      ItemSpaces.Right = 5.000000000000000000
+      Align = Client
+      Size.Width = 200.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+      ItemAppearanceObjects.ItemObjects.Text.Trimming = None
+    end
+  end
+  object Panel1: TPanel
+    Align = Left
+    Position.X = 400.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object lblLookup1: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Lookup 1'
+      TabOrder = 0
+    end
+    object lvLookup1: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      ItemIndex = 0
+      ItemSpaces.Left = 5.000000000000000000
+      ItemSpaces.Right = 5.000000000000000000
+      Align = Client
+      Size.Width = 200.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+      ItemAppearanceObjects.ItemObjects.Text.Trimming = None
+    end
+  end
+  object Panel2: TPanel
+    Align = Left
+    Position.X = 600.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Lookup 2'
+      TabOrder = 0
+    end
+    object lvLookup2: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      ItemIndex = 0
+      ItemSpaces.Left = 5.000000000000000000
+      ItemSpaces.Right = 5.000000000000000000
+      Align = Client
+      Size.Width = 200.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ItemAppearance.ItemHeight = 35
+      ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+      ItemAppearanceObjects.ItemObjects.Text.Trimming = None
+    end
+  end
+  object Panel3: TPanel
+    Align = Left
+    Position.X = 800.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object Label4: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 200.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Record'
+      TabOrder = 0
+    end
+    object lvRecord: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      ItemIndex = 0
+      ItemSpaces.Left = 5.000000000000000000
+      ItemSpaces.Right = 1.000000000000000000
+      Align = Client
+      Size.Width = 200.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+      ItemAppearanceObjects.ItemObjects.Text.Trimming = None
+      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    end
+  end
+  object BindSourceDBVendors: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginVendors
+    ScopeMappings = <>
+    Left = 240
+    Top = 248
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 676
+    Top = 373
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBVendors
+      FieldName = 'VENDOR_NAME'
+      Control = lvVendors
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBDataSets
+      FieldName = 'DATASET_NAME'
+      Control = lvDataSets
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField3: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBLookup1
+      FieldName = 'LOOKUP_KEY1'
+      Control = lvLookup1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField4: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBLookup2
+      FieldName = 'LOOKUP_KEY2'
+      Control = lvLookup2
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField5: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBRecord
+      FieldName = 'REC_VALUE'
+      Control = lvRecord
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBVendors
+      FieldName = 'VENDOR_SID'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBDataSets
+      FieldName = 'DATASET_SID'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBRecord
+      FieldName = 'REC_SID'
+      Control = Edit2
+      Track = False
+    end
+  end
+  object BindSourceDBDataSets: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginDataSets
+    ScopeMappings = <>
+    Left = 328
+    Top = 264
+  end
+  object BindSourceDBLookup1: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginLookup1
+    ScopeMappings = <>
+    Left = 416
+    Top = 280
+  end
+  object BindSourceDBLookup2: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginLookup2
+    ScopeMappings = <>
+    Left = 504
+    Top = 304
+  end
+  object BindSourceDBRecord: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginRecord
+    ScopeMappings = <>
+    Left = 592
+    Top = 328
+  end
+end
