@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
   FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.Oracle, FireDAC.Phys.OracleDef,
   FireDAC.FMXUI.Wait, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client;
+  FireDAC.Comp.Client, FireDAC.VCLUI.Wait;
 
 type
   TdmRProPluginDS = class(TDataModule)
@@ -37,10 +37,8 @@ type
     qryRProPluginRecordREC_VALUE: TWideStringField;
     qryRProPluginRecordCREATED_DATE: TDateTimeField;
     qryRProPluginRecordMODIFIED_DATE: TDateTimeField;
-  private
-    { Private declarations }
   public
-    { Public declarations }
+    procedure RefreshAllQueries;
   end;
 
 var
@@ -51,5 +49,22 @@ implementation
 {%CLASSGROUP 'FMX.Controls.TControl'}
 
 {$R *.dfm}
+
+{ TdmRProPluginDS }
+
+procedure TdmRProPluginDS.RefreshAllQueries;
+begin
+  qryRProPluginRecord.Close;
+  qryRProPluginLookup2.Close;
+  qryRProPluginLookup1.Close;
+  qryRProPluginDataSets.Close;
+  qryRProPluginVendors.Close;
+
+  qryRProPluginVendors.Open;
+  qryRProPluginDataSets.Open;
+  qryRProPluginLookup1.Open;
+  qryRProPluginLookup2.Open;
+  qryRProPluginRecord.Open;
+end;
 
 end.
