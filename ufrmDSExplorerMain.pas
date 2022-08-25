@@ -48,10 +48,10 @@ type
     Label6: TLabel;
     Edit2: TEdit;
     LinkControlToField3: TLinkControlToField;
+    btnRefresh: TButton;
+    procedure btnRefreshClick(Sender: TObject);
   private
-    { Private declarations }
-  public
-    { Public declarations }
+    procedure RefreshVendors;
   end;
 
 var
@@ -62,5 +62,15 @@ implementation
 {$R *.fmx}
 
 uses udmRProPluginDS;
+
+procedure TfrmDSExplorerMain.btnRefreshClick(Sender: TObject);
+begin
+  RefreshVendors;
+end;
+
+procedure TfrmDSExplorerMain.RefreshVendors;
+begin
+  dmRProPluginDS.RefreshAllQueries;
+end;
 
 end.

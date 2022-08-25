@@ -2,7 +2,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
   Left = 0
   Top = 0
   Caption = 'Header Footer Form'
-  ClientHeight = 474
+  ClientHeight = 476
   ClientWidth = 1004
   Constraints.MaxWidth = 1004.000000000000000000
   Constraints.MinWidth = 1004.000000000000000000
@@ -24,11 +24,21 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       TextSettings.HorzAlign = Center
       Text = 'Retail Pro Plugin DataStore Explorer'
       TabOrder = 0
+      object btnRefresh: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 42
+        Text = 'Refresh'
+        OnClick = btnRefreshClick
+      end
     end
   end
   object Footer: TToolBar
     Align = Bottom
-    Position.Y = 434.000000000000000000
+    Position.Y = 436.000000000000000000
     Size.Width = 1004.000000000000000000
     Size.Height = 40.000000000000000000
     Size.PlatformDefault = False
@@ -46,7 +56,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 4
         ReadOnly = True
-        Text = '7796004949480640247'
+        Text = '7406668547768461558'
         TextSettings.Font.Size = 10.000000000000000000
         Position.X = 68.000000000000000000
         Position.Y = 1.000000000000000000
@@ -68,7 +78,6 @@ object frmDSExplorerMain: TfrmDSExplorerMain
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 4
         ReadOnly = True
-        Text = '7796004949611777783'
         TextSettings.Font.Size = 10.000000000000000000
         Position.X = 67.000000000000000000
         Position.Y = 1.000000000000000000
@@ -90,7 +99,6 @@ object frmDSExplorerMain: TfrmDSExplorerMain
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 4
         ReadOnly = True
-        Text = '7796012525903222261'
         TextSettings.Font.Size = 10.000000000000000000
         Position.X = 67.000000000000000000
         Position.Y = 1.000000000000000000
@@ -105,7 +113,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
     Align = Left
     Position.Y = 48.000000000000000000
     Size.Width = 200.000000000000000000
-    Size.Height = 386.000000000000000000
+    Size.Height = 388.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
     object lblVendors: TLabel
@@ -129,7 +137,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemSpaces.Right = 5.000000000000000000
       Align = Client
       Size.Width = 200.000000000000000000
-      Size.Height = 361.000000000000000000
+      Size.Height = 363.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       ItemAppearance.ItemHeight = 35
@@ -142,7 +150,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
     Position.X = 200.000000000000000000
     Position.Y = 48.000000000000000000
     Size.Width = 200.000000000000000000
-    Size.Height = 386.000000000000000000
+    Size.Height = 388.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
     object lblDataSet: TLabel
@@ -161,12 +169,11 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
       HeaderAppearanceClassName = 'TListHeaderObjects'
       FooterAppearanceClassName = 'TListHeaderObjects'
-      ItemIndex = 0
       ItemSpaces.Left = 5.000000000000000000
       ItemSpaces.Right = 5.000000000000000000
       Align = Client
       Size.Width = 200.000000000000000000
-      Size.Height = 361.000000000000000000
+      Size.Height = 363.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
@@ -178,7 +185,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
     Position.X = 400.000000000000000000
     Position.Y = 48.000000000000000000
     Size.Width = 200.000000000000000000
-    Size.Height = 386.000000000000000000
+    Size.Height = 388.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 7
     object lblLookup1: TLabel
@@ -197,12 +204,11 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
       HeaderAppearanceClassName = 'TListHeaderObjects'
       FooterAppearanceClassName = 'TListHeaderObjects'
-      ItemIndex = 0
       ItemSpaces.Left = 5.000000000000000000
       ItemSpaces.Right = 5.000000000000000000
       Align = Client
       Size.Width = 200.000000000000000000
-      Size.Height = 361.000000000000000000
+      Size.Height = 363.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
@@ -214,7 +220,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
     Position.X = 600.000000000000000000
     Position.Y = 48.000000000000000000
     Size.Width = 200.000000000000000000
-    Size.Height = 386.000000000000000000
+    Size.Height = 388.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 10
     object Label1: TLabel
@@ -233,12 +239,11 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
       HeaderAppearanceClassName = 'TListHeaderObjects'
       FooterAppearanceClassName = 'TListHeaderObjects'
-      ItemIndex = 0
       ItemSpaces.Left = 5.000000000000000000
       ItemSpaces.Right = 5.000000000000000000
       Align = Client
       Size.Width = 200.000000000000000000
-      Size.Height = 361.000000000000000000
+      Size.Height = 363.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       ItemAppearance.ItemHeight = 35
@@ -251,7 +256,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
     Position.X = 800.000000000000000000
     Position.Y = 48.000000000000000000
     Size.Width = 200.000000000000000000
-    Size.Height = 386.000000000000000000
+    Size.Height = 388.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
     object Label4: TLabel
@@ -270,12 +275,11 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
       HeaderAppearanceClassName = 'TListHeaderObjects'
       FooterAppearanceClassName = 'TListHeaderObjects'
-      ItemIndex = 0
       ItemSpaces.Left = 5.000000000000000000
       ItemSpaces.Right = 1.000000000000000000
       Align = Client
       Size.Width = 200.000000000000000000
-      Size.Height = 361.000000000000000000
+      Size.Height = 363.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
