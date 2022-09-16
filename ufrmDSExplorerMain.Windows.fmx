@@ -1,0 +1,42 @@
+inherited frmDSExplorerMain_Windows: TfrmDSExplorerMain_Windows
+  DesignerMasterStyle = 0
+  inherited pnlVendors: TPanel
+    inherited lblVendors: TLabel
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited pnlDataSets: TPanel
+    inherited lblDataSet: TLabel
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited Panel1: TPanel
+    inherited lblLookup1: TLabel
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited Panel2: TPanel
+    inherited Label1: TLabel
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited Panel3: TPanel
+    inherited Label4: TLabel
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited StyleBook1: TStyleBook [7]
+  end
+  inherited BindSourceDBVendors: TBindSourceDB [8]
+  end
+  inherited BindingsList1: TBindingsList [9]
+  end
+  inherited BindSourceDBDataSets: TBindSourceDB [10]
+  end
+  inherited BindSourceDBLookup1: TBindSourceDB [11]
+  end
+  inherited BindSourceDBLookup2: TBindSourceDB [12]
+  end
+  inherited BindSourceDBRecord: TBindSourceDB [13]
+  end
+end

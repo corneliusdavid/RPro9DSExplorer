@@ -49,6 +49,7 @@ type
     Edit2: TEdit;
     LinkControlToField3: TLinkControlToField;
     btnRefresh: TButton;
+    StyleBook1: TStyleBook;
     procedure btnRefreshClick(Sender: TObject);
   private
     procedure RefreshVendors;
@@ -60,6 +61,7 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.Windows.fmx MSWINDOWS}
 
 uses udmRProPluginDS;
 
