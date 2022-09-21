@@ -3,22 +3,21 @@ object frmDSExplorerMain: TfrmDSExplorerMain
   Top = 0
   Caption = 'Retail Pro 9 DataStore Explorer'
   ClientHeight = 876
-  ClientWidth = 1004
+  ClientWidth = 1088
   StyleBook = StyleBook1
-  Constraints.MaxWidth = 1004.000000000000000000
-  Constraints.MinWidth = 1004.000000000000000000
+  Constraints.MinWidth = 1000.000000000000000000
   FormFactor.Width = 1440
   FormFactor.Height = 900
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Header: TToolBar
-    Size.Width = 1004.000000000000000000
+    Size.Width = 1088.000000000000000000
     Size.Height = 48.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object lblHeader: TLabel
       Align = Contents
-      Size.Width = 1004.000000000000000000
+      Size.Width = 1088.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'toollabel'
@@ -40,7 +39,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
   object Footer: TToolBar
     Align = Bottom
     Position.Y = 836.000000000000000000
-    Size.Width = 1004.000000000000000000
+    Size.Width = 1088.000000000000000000
     Size.Height = 40.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'bottomtoolbar'
@@ -260,17 +259,15 @@ object frmDSExplorerMain: TfrmDSExplorerMain
     end
   end
   object Panel3: TPanel
-    Align = Left
-    Position.X = 800.000000000000000000
-    Position.Y = 48.000000000000000000
-    Size.Width = 200.000000000000000000
+    Align = Client
+    Size.Width = 288.000000000000000000
     Size.Height = 788.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
     object Label4: TLabel
       Align = Top
       StyledSettings = [Family, Size, FontColor]
-      Size.Width = 200.000000000000000000
+      Size.Width = 288.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -287,7 +284,7 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemSpaces.Left = 5.000000000000000000
       ItemSpaces.Right = 1.000000000000000000
       Align = Client
-      Size.Width = 200.000000000000000000
+      Size.Width = 288.000000000000000000
       Size.Height = 763.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -295,108 +292,6 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       ItemAppearanceObjects.ItemObjects.Text.Trimming = None
       ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
     end
-  end
-  object BindSourceDBVendors: TBindSourceDB
-    DataSet = dmRProPluginDS.qryRProPluginVendors
-    ScopeMappings = <>
-    Left = 240
-    Top = 248
-  end
-  object BindingsList1: TBindingsList
-    Methods = <>
-    OutputConverters = <>
-    Left = 676
-    Top = 373
-    object LinkListControlToField1: TLinkListControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBVendors
-      FieldName = 'VENDOR_NAME'
-      Control = lvVendors
-      FillExpressions = <>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkListControlToField2: TLinkListControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBDataSets
-      FieldName = 'DATASET_NAME'
-      Control = lvDataSets
-      FillExpressions = <>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkListControlToField3: TLinkListControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBLookup1
-      FieldName = 'LOOKUP_KEY1'
-      Control = lvLookup1
-      FillExpressions = <>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkListControlToField4: TLinkListControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBLookup2
-      FieldName = 'LOOKUP_KEY2'
-      Control = lvLookup2
-      FillExpressions = <>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkListControlToField5: TLinkListControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBRecord
-      FieldName = 'REC_VALUE'
-      Control = lvRecord
-      FillExpressions = <>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkControlToField1: TLinkControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBVendors
-      FieldName = 'VENDOR_SID'
-      Control = Edit1
-      Track = False
-    end
-    object LinkControlToField2: TLinkControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBDataSets
-      FieldName = 'DATASET_SID'
-      Control = Edit3
-      Track = False
-    end
-    object LinkControlToField3: TLinkControlToField
-      Category = 'Quick Bindings'
-      DataSource = BindSourceDBRecord
-      FieldName = 'REC_SID'
-      Control = Edit2
-      Track = False
-    end
-  end
-  object BindSourceDBDataSets: TBindSourceDB
-    DataSet = dmRProPluginDS.qryRProPluginDataSets
-    ScopeMappings = <>
-    Left = 328
-    Top = 264
-  end
-  object BindSourceDBLookup1: TBindSourceDB
-    DataSet = dmRProPluginDS.qryRProPluginLookup1
-    ScopeMappings = <>
-    Left = 416
-    Top = 280
-  end
-  object BindSourceDBLookup2: TBindSourceDB
-    DataSet = dmRProPluginDS.qryRProPluginLookup2
-    ScopeMappings = <>
-    Left = 504
-    Top = 304
-  end
-  object BindSourceDBRecord: TBindSourceDB
-    DataSet = dmRProPluginDS.qryRProPluginRecord
-    ScopeMappings = <>
-    Left = 592
-    Top = 328
   end
   object StyleBook1: TStyleBook
     Styles = <
@@ -3554,5 +3449,107 @@ object frmDSExplorerMain: TfrmDSExplorerMain
       end>
     Left = 280
     Top = 360
+  end
+  object BindSourceDBVendors: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginVendors
+    ScopeMappings = <>
+    Left = 240
+    Top = 248
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 676
+    Top = 373
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBVendors
+      FieldName = 'VENDOR_NAME'
+      Control = lvVendors
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBDataSets
+      FieldName = 'DATASET_NAME'
+      Control = lvDataSets
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField3: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBLookup1
+      FieldName = 'LOOKUP_KEY1'
+      Control = lvLookup1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField4: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBLookup2
+      FieldName = 'LOOKUP_KEY2'
+      Control = lvLookup2
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField5: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBRecord
+      FieldName = 'REC_VALUE'
+      Control = lvRecord
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBVendors
+      FieldName = 'VENDOR_SID'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBDataSets
+      FieldName = 'DATASET_SID'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDBRecord
+      FieldName = 'REC_SID'
+      Control = Edit2
+      Track = False
+    end
+  end
+  object BindSourceDBDataSets: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginDataSets
+    ScopeMappings = <>
+    Left = 328
+    Top = 264
+  end
+  object BindSourceDBLookup1: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginLookup1
+    ScopeMappings = <>
+    Left = 416
+    Top = 280
+  end
+  object BindSourceDBLookup2: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginLookup2
+    ScopeMappings = <>
+    Left = 504
+    Top = 304
+  end
+  object BindSourceDBRecord: TBindSourceDB
+    DataSet = dmRProPluginDS.qryRProPluginRecord
+    ScopeMappings = <>
+    Left = 592
+    Top = 328
   end
 end

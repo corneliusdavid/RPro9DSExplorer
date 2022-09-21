@@ -1,5 +1,16 @@
 inherited frmDSExplorerMain_Windows: TfrmDSExplorerMain_Windows
+  ClientWidth = 1000
+  Constraints.MinWidth = 1010.000000000000000000
   DesignerMasterStyle = 0
+  inherited Header: TToolBar
+    Size.Width = 1000.000000000000000000
+    inherited lblHeader: TLabel
+      Size.Width = 1000.000000000000000000
+    end
+  end
+  inherited Footer: TToolBar
+    Size.Width = 1000.000000000000000000
+  end
   inherited pnlVendors: TPanel
     inherited lblVendors: TLabel
       TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -21,22 +32,13 @@ inherited frmDSExplorerMain_Windows: TfrmDSExplorerMain_Windows
     end
   end
   inherited Panel3: TPanel
+    Size.Width = 200.000000000000000000
     inherited Label4: TLabel
+      Size.Width = 200.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
     end
-  end
-  inherited StyleBook1: TStyleBook [7]
-  end
-  inherited BindSourceDBVendors: TBindSourceDB [8]
-  end
-  inherited BindingsList1: TBindingsList [9]
-  end
-  inherited BindSourceDBDataSets: TBindSourceDB [10]
-  end
-  inherited BindSourceDBLookup1: TBindSourceDB [11]
-  end
-  inherited BindSourceDBLookup2: TBindSourceDB [12]
-  end
-  inherited BindSourceDBRecord: TBindSourceDB [13]
+    inherited lvRecord: TListView
+      Size.Width = 200.000000000000000000
+    end
   end
 end
